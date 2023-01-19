@@ -2,3 +2,8 @@
 import sys
 import time
 
+def game_introduction():
+    """"
+    Game intro
+    """
+    
