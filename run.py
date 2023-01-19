@@ -24,12 +24,17 @@ def game_introduction():
     print("And using the radio for help he fails.")
     print("Eventually the plane crashes in a deserted island\n")
     time.sleep(2)
-    print("BOOM...\n")
+    print("####       ###    ###   #       #  #")
+    print("#    #    #   #  #   #  # #   # #  # ")
+    print("### #     #   #  #   #  #   #   #  #")
+    print("#    #    #   #  #   #  #       #    ")
+    print("####      ###     ###   #       #  #")
     print(".")
     print(".")
+    print(".")
+    print("The plane has crashed!!!")
 
 
-game_introduction()
 
 
 def game_start():
@@ -52,21 +57,43 @@ def game_start():
             play_again()
             break
         if find_the_way == "yes":
-            get_username()
+            username()
             break
         else:
             print("Wrong input. Please type 'yes' or 'no'.")
             continue
 
 
-game_start()
-
-
 def username():
- """
+    """
     Continues with the story, asks user to input a name. If no input,
     user asked again. If input provided, game continues giving the user
     three directions to choose from: right (second_choice function), left
     (eightth_choice function), move forward (fourth_choice function). If incorrect input
     provided, user is asked the question again.
     """
+    print("\nGreat! You made a life-changing decision!")
+    time.sleep(2)
+    print("However, the world spins when you try to get up...")
+    time.sleep(2)
+    print("You might have a concusion as details of the crash are blurry.\n")
+    time.sleep(2)
+    while True:
+        name = input("Do you remember who you are? (type name):\n")
+        if name == "":
+            print("Wrong input. Please provide a name.")
+            continue
+        else:
+            print(f"Hello, {name}!")
+            break
+    print("\nThe tide is coming in, you should get a move on!")
+    time.sleep(2)
+    print("You can go left along the shore, right along the shore,\n" +
+          "or inland towards higher ground.\n")
+    while True:
+        first_choice = input("Which way will you go? (left/right/inland):\n")
+
+
+game_introduction()
+game_start()
+username()
