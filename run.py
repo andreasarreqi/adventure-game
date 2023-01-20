@@ -175,6 +175,13 @@ def second_choice():
             continue
 
 
+# The fourth choice function
+def fourth_choice():
+    """
+    The inland option. 
+    """
+ 
+
 game_introduction()
 game_start()
 
