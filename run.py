@@ -5,6 +5,8 @@ import time
 
 global axe
 axe = "no"
+global Flare
+flare = "no"
 
 
 def game_introduction():
@@ -175,13 +177,52 @@ def second_choice():
             continue
 
 
-# The fourth choice function
+# The fourth choice function / inland
 def fourth_choice():
     """
-    The inland option. 
+    The inland option
     """
- 
+    print("\nYou keep moving forward.")
+    time.sleep(1)
+    print("The terrain keeps changing.\n")
+    time.sleep(1)
+    print("You have difficulties as there are spiky bushes.\n")
+    time.sleep(1)
+    print("And it's starting to rain aswell.\n")
+    time.sleep(1)
+    print("Trying to look for a place to stay.\n")
+    time.sleep(1)
+    print("You stumble upon a flare.\n")
+    while True:
+        flare = input("Do you take the flare?: (yes/no)")
+        time.sleep(1)
+        if flare == "yes":
+            print("Good choice. That might be helpful.\n")
+        else:
+            print("Bad decision but good luck to you.")
+            break
+    time.sleep(2)
+    print("\nWith an axe and a flare you keep moving forward")
+    time.sleep(2)
+    print("After few meters walking you come across a cave\n")
+    time.sleep(1)
+    print("Yuo go inside the cave")
+    print("\nAs soon as you go in, you hear growling")
+    print("IT'S A WOLF!!")
+    while True:
+        light_flare = input("Do you light up the flare or use the axe?: (flare/axe")
+        if light_flare == "yes":
+            print("Good idea. The wolf got scared and ran away.")
+        elif axe == "yes":
+            print("You manage to hit the wolf but the wolf bit you back")
+            print("After taking quite the serious damage")
+            print("The wounbd gets infected eventually causing death..")
+            print("GAME OVER")
+            play_again()
+            
+
+
+
 
 game_introduction()
 game_start()
-
