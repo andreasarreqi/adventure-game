@@ -38,6 +38,7 @@ def game_introduction():
     print(".")
     print(".")
     print("The plane has crashed!!!")
+    
 
 
 # The game start function
@@ -133,16 +134,47 @@ def second_choice():
         else:
             print("Wrong input. Please type 'yes' or 'no'.")
             continue
-        
+        time.sleep(1.5)
+        print("You continue looking around. It's getting dark")
+        time.sleep(2)
+        while True:
+            third_choice = input("Do you stay or go inland? (stay/go):\n")
+            if third_choice == "yes":
+                print("You lay down to get some rest.")
+                print("You eventually fall asleep and a poisonous snake bites you.\n")
+                time.sleep(1.5)
+                print("GAME OVER\n")
+                play_again()
+                break
+            elif third_choise == "go":
+                fourth_choice()
+                break
+            else:
+                print("Wrong input. Please choose to 'go' or 'stay'.")
+            continue
+        time.sleep(2)
+        print("You continue searching the wreckage until it gets dark.\n")
+        time.sleep(2)
+    while True:
+        third_choice = input("Do you stay or go inland? (stay/go):\n")
+        if third_choice == "stay":
+            print("\nYou lay down to rest for a few minutes.")
+            time.sleep(2)
+            print("\nYou fall asleep without realising it.")
+            time.sleep(2)
+            print("You get bitten by a poisonous snake and die....\n")
+            time.sleep(3)
+            print("GAME OVER\n")
+            play_again()
+            break
+        elif third_choice == "go":
+            fourth_choice()
+            break
+        else:
+            print("Wrong input. Please choose to 'go' or 'stay'.")
+            continue
 
 
+game_introduction()
+game_start()
 
-# The function control tower
-def main():
-    game_introduction()
-    game_start()
-    username()
-    second_choice()
-
-
-main()
