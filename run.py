@@ -1,6 +1,11 @@
-#Importing sys and time modules
+# Importing sys and time modules
 import sys
 import time
+
+
+global knife
+knife = "no"
+
 
 def game_introduction():
     """"
@@ -24,19 +29,18 @@ def game_introduction():
     print("And using the radio for help he fails.")
     print("Eventually the plane crashes in a deserted island\n")
     time.sleep(2)
-    print("####       ###    ###   #       #  #")
-    print("#    #    #   #  #   #  # #   # #  # ")
-    print("### #     #   #  #   #  #   #   #  #")
-    print("#    #    #   #  #   #  #       #    ")
-    print("####      ###     ###   #       #  #")
+    print("####       ###      ###     #       #  #")
+    print("#    #    #   #    #   #    # #   # #  # ")
+    print("### #     #   #    #   #    #   #   #  #")
+    print("#    #    #   #    #   #    #       #    ")
+    print("####       ###      ###     #       #  #")
     print(".")
     print(".")
     print(".")
     print("The plane has crashed!!!")
 
 
-
-
+# The game start function
 def game_start():
     """
     Setting up the game start function
@@ -47,7 +51,6 @@ def game_start():
     while True:
         find_the_way = input("Would you like to try to find a way " +
         "to leave the island? (yes/no):\n")
-
         if find_the_way == "no":
             print("\nWell, it was nice knowing you...")
             time.sleep(2)
@@ -64,6 +67,7 @@ def game_start():
             continue
 
 
+# The username function
 def username():
     """
     Continues with the story, asks user to input a name. If no input,
@@ -92,8 +96,33 @@ def username():
           "or inland towards higher ground.\n")
     while True:
         first_choice = input("Which way will you go? (left/right/inland):\n")
+        if first_choice == "right":
+            second_choice()
+            break
+        elif first_choice == "left":
+            choice_eight()
+            break
+        elif first_choice == "inland":
+            fourth_choice()
+            break
+        else:
+            print("Wrong input. Please type 'left', 'right' or 'inland'.")
+            continue
 
 
-game_introduction()
-game_start()
-username()
+# Second choice function / go right find an axe
+def second_choice():
+    """
+    Give the user the choice to pick up the axe or keep on moving
+    """
+
+
+
+# The function control tower
+def main():
+    game_introduction()
+    game_start()
+    username()
+
+
+main()
