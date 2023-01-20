@@ -3,8 +3,8 @@ import sys
 import time
 
 
-global knife
-knife = "no"
+global axe
+axe = "no"
 
 
 def game_introduction():
@@ -100,7 +100,7 @@ def username():
             second_choice()
             break
         elif first_choice == "left":
-            choice_eight()
+            eightth_choice()
             break
         elif first_choice == "inland":
             fourth_choice()
@@ -115,6 +115,25 @@ def second_choice():
     """
     Give the user the choice to pick up the axe or keep on moving
     """
+    print("\nYou walk until you spot more wreckage from your plane.")
+    time.sleep(2)
+    print("You decide to search it.")
+    time.sleep(2)
+    print("You find an axe!\n")
+    time.sleep(2)
+    while True:
+        global axe
+        axe = input("Do you take it? (yes/no):\n")
+        if axe == "yes":
+            print("Good choice. That might be a usefool tool.")
+            break
+        elif axe == "no":
+            print("\n Let's hope that's the right choice.")
+            break
+        else:
+            print("Wrong input. Please type 'yes' or 'no'.")
+            continue
+        
 
 
 
@@ -123,6 +142,7 @@ def main():
     game_introduction()
     game_start()
     username()
+    second_choice()
 
 
 main()
