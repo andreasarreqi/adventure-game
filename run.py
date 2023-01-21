@@ -1,5 +1,4 @@
-# Importing sys and time modules
-import sys
+# Importing time modules
 import time
 
 
@@ -100,7 +99,7 @@ def username():
             second_choice()
             break
         elif first_choice == "left":
-            eightth_choice()
+            fifth_choice()
             break
         elif first_choice == "inland":
             fourth_choice()
@@ -177,7 +176,9 @@ def second_choice():
 # The fourth choice function / inland
 def fourth_choice():
     """
-    The inland option
+    If the user either choses the right path or the inland path.
+    This function introduces the user to the flare.
+    And the choice if they want to pick it up or move on without it.
     """
     print("\nYou keep moving forward.")
     time.sleep(1)
@@ -244,7 +245,12 @@ def fourth_choice():
             print("GAME OVER")
             play_again()
 
-            
+
+# The fifth choice / Go left
+def fifth_choice():
+    """
+    the fifth choice function
+    """
 
 
 
