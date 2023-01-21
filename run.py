@@ -283,6 +283,9 @@ def fifth_choice():
 
 
 def fruit():
+    """
+    The fruit function giving the user the choice to eat the fruit or keep moving
+    """
     edible_fruit = input("Do you eat the fruit ?: (yes/no)")
     if edible_fruit == "yes":
         print("Good. You are set ffor few more hours")
