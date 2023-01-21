@@ -74,11 +74,7 @@ def game_start():
 # The username function
 def username():
     """
-    Continues with the story, asks user to input a name. If no input,
-    user asked again. If input provided, game continues giving the user
-    three directions to choose from: right (second_choice function), left
-    (eightth_choice function), move forward (fourth_choice function). If incorrect input
-    provided, user is asked the question again.
+    Continues with the story.Deals with the left/right/inland inputs a.k.a choices.
     """
     print("\nGreat! You made a life-changing decision!")
     time.sleep(2)
@@ -214,8 +210,24 @@ def fourth_choice():
     print("IT'S A WOLF!!")
     while True:
         if flare == "yes":
-            print("Good idea. The wolf got scared and ran away.")
+            print("You light the flare and fortunately.\n")
+            print("\nThe wolf got scared and ran away.")
             time.sleep(2)
+        if flare == "yes" and axe == "yes":
+            print("\nHeavy storm picking up")
+            time.sleep(2)
+            print("\nSo you can't go anywhere.")
+            print("You end up sleeping in the cave.\n")
+            time.sleep(2)
+            print("Before you wake up theres an earthquake\n")
+            time.sleep(2)
+            print("The cave crumbles trapping you in it\n")
+            time.sleep(2)
+            print("You end up starving to death\n")
+            time.sleep(2)
+            print("GAME OVER\n")
+            play_again()
+            break
         elif flare == "no" and axe == "no":
             print("Without any weapons to fight the wolf\n")
             time.sleep(2)
@@ -231,6 +243,7 @@ def fourth_choice():
             print("The wounbd gets infected eventually causing death..")
             print("GAME OVER")
             play_again()
+
             
 
 
