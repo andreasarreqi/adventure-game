@@ -254,10 +254,32 @@ def fifth_choice():
     """
     while True:
         print("Devestated yet focused.\n")
+        time.sleep(2)
         print("You keep looking around..\n")
+        time.sleep(2)
         print("And time is running out...\n")
-        
-        
+        time.sleep(2)
+        print(("You keep moving forward finding a way to get out.\n"))
+        time.sleep(2)
+        print("And you come across 2 roads\n")
+        time.sleep(2)
+        roads = input("Which direction do you chose ?: (left/right)\n")
+        time.sleep(2)
+        if roads == "left":
+            print("Good the area seems to be clear of danger")
+            time.sleep(2)
+            break
+        elif roads == "right":
+            print("Good the area seems to be clear of danger")
+            time.sleep(2)
+            break
+        else:
+            print("Wrong input. Please type 'left', 'right'")
+            time.sleep(2)
+
+            continue
+
+
         
 
 
