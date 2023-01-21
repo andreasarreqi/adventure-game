@@ -9,6 +9,7 @@ global Flare
 flare = "no"
 
 
+
 def game_introduction():
     """"
     Game intro
@@ -148,15 +149,15 @@ def second_choice():
                 print("GAME OVER\n")
                 play_again()
                 break
-            elif third_choise == "go":
+            elif third_choice == "go":
                 fourth_choice()
                 break
             else:
                 print("Wrong input. Please choose to 'go' or 'stay'.")
-            continue
-        time.sleep(2)
-        print("You continue searching the wreckage until it gets dark.\n")
-        time.sleep(2)
+                continue
+            time.sleep(2)
+            print("You continue searching the wreckage until it gets dark.\n")
+            time.sleep(2)
     while True:
         third_choice = input("Do you stay or go inland? (stay/go):\n")
         if third_choice == "stay":
@@ -194,15 +195,17 @@ def fourth_choice():
     time.sleep(1)
     print("You stumble upon a flare.\n")
     while True:
+        global flare
         flare = input("Do you take the flare?: (yes/no)")
         time.sleep(1)
         if flare == "yes":
             print("Good choice. That might be helpful.\n")
+            break
         else:
             print("Bad decision but good luck to you.")
             break
     time.sleep(2)
-    print("\nWith an axe and a flare you keep moving forward")
+    print("\You keep moving forward")
     time.sleep(2)
     print("After few meters walking you come across a cave\n")
     time.sleep(1)
@@ -210,10 +213,19 @@ def fourth_choice():
     print("\nAs soon as you go in, you hear growling")
     print("IT'S A WOLF!!")
     while True:
-        light_flare = input("Do you light up the flare or use the axe?: (flare/axe")
-        if light_flare == "yes":
+        if flare == "yes":
             print("Good idea. The wolf got scared and ran away.")
-        elif axe == "yes":
+            time.sleep(2)
+        elif flare == "no" and axe == "no":
+            print("Without any weapons to fight the wolf\n")
+            time.sleep(2)
+            print("The wolf ends up biting you.\n")
+            time.sleep(2)
+            print("TAnd damaging your vital organs..\n")
+            time.sleep(2)
+            print("\nGAME OVER")
+            play_again()
+        else:
             print("You manage to hit the wolf but the wolf bit you back")
             print("After taking quite the serious damage")
             print("The wounbd gets infected eventually causing death..")
