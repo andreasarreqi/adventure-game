@@ -203,7 +203,7 @@ def fourth_choice():
             print("Bad decision but good luck to you.")
             break
     time.sleep(2)
-    print("\You keep moving forward")
+    print("\nYou keep moving forward")
     time.sleep(2)
     print("After few meters walking you come across a cave\n")
     time.sleep(1)
@@ -215,6 +215,20 @@ def fourth_choice():
             print("You light the flare and fortunately.\n")
             print("\nThe wolf got scared and ran away.")
             time.sleep(2)
+            print("\nHeavy storm picking up")
+            time.sleep(2)
+            print("\nSo you can't go anywhere.")
+            print("You end up sleeping in the cave.\n")
+            time.sleep(2)
+            print("Before you wake up theres an earthquake\n")
+            time.sleep(2)
+            print("The cave crumbles trapping you in it\n")
+            time.sleep(2)
+            print("You end up starving to death\n")
+            time.sleep(2)
+            print("GAME OVER\n")
+            play_again()
+            break
         if flare == "yes" and axe == "yes":
             print("\nHeavy storm picking up")
             time.sleep(2)
@@ -230,21 +244,29 @@ def fourth_choice():
             print("GAME OVER\n")
             play_again()
             break
-        elif flare == "no" and axe == "no":
-            print("Without any weapons to fight the wolf\n")
+        elif flare == "no" and axe == "yes":
+            print("Despite the fact you're fighting back..\n")
             time.sleep(2)
             print("The wolf ends up biting you.\n")
             time.sleep(2)
-            print("TAnd damaging your vital organs..\n")
+            print("And damaging your vital organs..\n")
+            time.sleep(2)
+            print("Causing a slow and painful death...\n")
             time.sleep(2)
             print("\nGAME OVER")
             play_again()
         else:
-            print("You manage to hit the wolf but the wolf bit you back")
-            print("After taking quite the serious damage")
-            print("The wounbd gets infected eventually causing death..")
-            print("GAME OVER")
+            print("Without any weapons to fight the wolf\n")
+            time.sleep(2)
+            print("The wolf ends up biting you.\n")
+            time.sleep(2)
+            print("And damaging your vital organs..\n")
+            time.sleep(2)
+            print("Causing a slow and painful death...\n")
+            time.sleep(2)
+            print("\nGAME OVER")
             play_again()
+            break
 
 
 # The fifth choice / Go left
