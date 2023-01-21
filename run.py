@@ -263,7 +263,7 @@ def fifth_choice():
         time.sleep(2)
         print("And you come across 2 roads\n")
         time.sleep(2)
-        roads = input("Which direction do you chose ?: (left/right)\n")
+        roads = input("Which direction do you choose ?: (left/right)\n")
         time.sleep(2)
         if roads == "left":
             global edible_fruit
@@ -275,6 +275,7 @@ def fifth_choice():
             break
         elif roads == "right":
             print("Good the area seems to be clear of danger")
+            bear()
             time.sleep(2)
             break
         else:
@@ -295,10 +296,14 @@ def fruit():
         print("You end up starving and dying...")
         print("GAME OVER !!!")
         play_again()
-        
     else:
         print("Wrong input. Please type 'yes', 'no'")
-        
+
+
+def bear():
+    """
+    The bear function. Completing the right directiion of the road.
+    """
 
 
 
