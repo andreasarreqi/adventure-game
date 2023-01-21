@@ -266,8 +266,12 @@ def fifth_choice():
         roads = input("Which direction do you chose ?: (left/right)\n")
         time.sleep(2)
         if roads == "left":
+            global edible_fruit
             print("Good the area seems to be clear of danger")
+            print("You keep exploring the terrain for food.")
+            print("And you find some fruit")
             time.sleep(2)
+            fruit()
             break
         elif roads == "right":
             print("Good the area seems to be clear of danger")
@@ -275,11 +279,22 @@ def fifth_choice():
             break
         else:
             print("Wrong input. Please type 'left', 'right'")
-            time.sleep(2)
-
             continue
 
 
+def fruit():
+    edible_fruit = input("Do you eat the fruit ?: (yes/no)")
+    if edible_fruit == "yes":
+        print("Good. You are set ffor few more hours")
+        print("Now you're only focusing on finding a way out...")
+    elif edible_fruit == "no":
+        print("Bad idea !!")
+        print("You end up starving and dying...")
+        print("GAME OVER !!!")
+        play_again()
+        
+    else:
+        print("Wrong input. Please type 'yes', 'no'")
         
 
 
