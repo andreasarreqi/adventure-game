@@ -6,7 +6,8 @@ global axe
 axe = "no"
 global Flare
 flare = "no"
-
+global edible_fruit
+edible_fruit = "no"
 
 
 def game_introduction():
@@ -251,6 +252,14 @@ def fifth_choice():
     """
     the fifth choice function
     """
+    while True:
+        print("Devestated yet focused.\n")
+        print("You keep looking around..\n")
+        print("And time is running out...\n")
+        
+        
+        
+
 
 
 
