@@ -374,6 +374,11 @@ def satellite_phone():
         play_again()
 
 
+def play_again():
+    """
+    The play again function giving the user the choice to play again or exit the game
+    """
+
 
 
 game_introduction()
