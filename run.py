@@ -184,7 +184,7 @@ def second_choice():
 
 def fourth_choice():
     """
-    If the user either choses the right path or the inland path.
+    If the user either right path,left or inland path.
     This function introduces the user to the flare.
     And the choice if they want to pick it up or move on without it.
     """
@@ -206,9 +206,12 @@ def fourth_choice():
         if flare == "yes":
             print("Good choice. That might be helpful.\n")
             break
-        else:
+        elif flare == "no":
             print("Bad decision but good luck to you.")
             break
+        else:
+            print("Wrong input. Please type 'yes' or 'no'.")
+            continue
     time.sleep(2)
     print("\nYou keep moving forward")
     time.sleep(2)
@@ -277,7 +280,7 @@ def fourth_choice():
             print(Fore.RED + "GAME OVER !\n")
             print(Style.RESET_ALL)
             play_again()
-            break
+            continue
 
 
 def fifth_choice():
