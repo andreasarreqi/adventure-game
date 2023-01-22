@@ -289,18 +289,17 @@ def fifth_choice():
     """
     the fifth choice function
     """
+    print("Devestated yet focused.\n")
+    time.sleep(1)
+    print("You keep looking around..\n")
+    time.sleep(1)
+    print("And time is running out...\n")
+    time.sleep(1)
+    print(("You keep moving forward finding a way to get out.\n"))
+    time.sleep(1)
+    print("And you come across 2 roads\n")
     while True:
-        print("Devestated yet focused.\n")
-        time.sleep(2)
-        print("You keep looking around..\n")
-        time.sleep(2)
-        print("And time is running out...\n")
-        time.sleep(2)
-        print(("You keep moving forward finding a way to get out.\n"))
-        time.sleep(2)
-        print("And you come across 2 roads\n")
-        time.sleep(2)
-        roads = input("Which direction do you choose ? (left/right):\n")
+        roads = input("Which direction do you choose? (left/right):\n")
         time.sleep(2)
         if roads == "left":
             global edible_fruit
@@ -317,7 +316,7 @@ def fifth_choice():
             time.sleep(2)
             break
         else:
-            print("Wrong input. Please type 'left', 'right'")
+            print("Wrong input. Please type 'left' or 'right'.")
             continue
 
 
@@ -325,37 +324,49 @@ def fruit():
     """
     The fruit function giving the user the choice to eat the fruit or keep moving
     """
-    edible_fruit = input("Do you eat the fruit ? (yes/no):")
-    if edible_fruit == "yes":
-        print("Good. You are set ffor few more hours")
-        print("Now you're only focusing on finding a way out...")
-    elif edible_fruit == "no":
-        print("Bad idea !!")
-        print("You end up starving and dying...")
-        print(Fore.RED + "GAME OVER !\n")
-        print(Style.RESET_ALL)
-        play_again()
-    else:
-        print("Wrong input. Please type 'yes', 'no'")
+    while True:
+        edible_fruit = input("Do you eat the fruit ? (yes/no)\n:")
+        if edible_fruit == "yes":
+            print("Good. You are set ffor few more hours")
+            time.sleep(2)
+            print("Now you're only focusing on finding a way out...")
+            time.sleep(2)
+            break
+        elif edible_fruit == "no":
+            print("Bad idea !!")
+            time.sleep(2)
+            print("You end up starving and dying...")
+            time.sleep(2)
+            print(Fore.RED + "GAME OVER !\n")
+            print(Style.RESET_ALL)
+            play_again()
+            break
+        else:
+            print("Wrong input. Please type 'yes' or 'no'")
+            continue
 
 
 def bear():
     """
     The bear function. Completing the right directiion of the road.
     """
-    print("You keep walking on the path you chose\n")
-    time.sleep(2)
-    print("You hear something moving behind you.\n")
-    time.sleep(2)
-    print("OH NO. It's A BEAR!!\n")
-    time.sleep(2)
-    print("The bear catches up to you\n")
-    time.sleep(2)
-    print("And kills you...\n")
-    time.sleep(2)
-    print(Fore.RED + "GAME OVER !\n")
-    print(Style.RESET_ALL)
-    play_again()
+    while True:
+        print("You keep walking on the path you chose\n")
+        time.sleep(2)
+        print("You hear something moving behind you.\n")
+        time.sleep(2)
+        print("OH NO. It's A BEAR!!\n")
+        time.sleep(2)
+        print("The bear catches up to you\n")
+        time.sleep(2)
+        print("And kills you...\n")
+        time.sleep(2)
+        print(Fore.RED + "GAME OVER !\n")
+        print(Style.RESET_ALL)
+        play_again()
+        break
+
+    
 
 
 def satellite_phone():
@@ -389,6 +400,7 @@ def satellite_phone():
             sys.stdout.flush()
             time.sleep(0.2)
         play_again()
+        break
 
 
 def play_again():
@@ -402,6 +414,8 @@ def play_again():
             axe = "no"
             global flare
             flare = "no"
+            global edible_fruit
+            edible_fruit = "no"
             game_introduction()
             game_start()
             break
