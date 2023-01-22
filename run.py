@@ -1,6 +1,8 @@
-# Importing time modules
+# Importing time module,sys and colorama
 import time
 import sys
+import colorama
+from colorama import Fore, Back, Style
 
 
 global axe
@@ -61,7 +63,8 @@ def game_start():
             time.sleep(2)
             print("Enjoy a slow and painful death from dehydration...\n")
             time.sleep(3)
-            print("GAME OVER\n")
+            print(Fore.RED + "GAME OVER !\n")
+            print(Style.RESET_ALL)
             play_again()
             break
         if find_the_way == "yes":
@@ -143,7 +146,8 @@ def second_choice():
                 print("You lay down to get some rest.")
                 print("You eventually fall asleep and a poisonous snake bites you.\n")
                 time.sleep(1.5)
-                print("GAME OVER\n")
+                print(Fore.RED + "GAME OVER !\n")
+                print(Style.RESET_ALL)
                 play_again()
                 break
             elif third_choice == "go":
@@ -164,7 +168,8 @@ def second_choice():
             time.sleep(2)
             print("You get bitten by a poisonous snake and die....\n")
             time.sleep(3)
-            print("GAME OVER\n")
+            print(Fore.RED + "GAME OVER !\n")
+            print(Style.RESET_ALL)
             play_again()
             break
         elif third_choice == "go":
@@ -195,7 +200,7 @@ def fourth_choice():
     print("You stumble upon a flare.\n")
     while True:
         global flare
-        flare = input("Do you take the flare? (yes/no):")
+        flare = input("Do you take the flare? (yes/no):\n")
         time.sleep(1)
         if flare == "yes":
             print("Good choice. That might be helpful.\n")
@@ -227,7 +232,8 @@ def fourth_choice():
             time.sleep(2)
             print("You end up starving to death\n")
             time.sleep(2)
-            print("GAME OVER\n")
+            print(Fore.RED + "GAME OVER !\n")
+            print(Style.RESET_ALL)
             play_again()
             break
         if flare == "yes" and axe == "yes":
@@ -242,7 +248,8 @@ def fourth_choice():
             time.sleep(2)
             print("You end up starving to death\n")
             time.sleep(2)
-            print("GAME OVER\n")
+            print(Fore.RED + "GAME OVER !\n")
+            print(Style.RESET_ALL)
             play_again()
             break
         elif flare == "no" and axe == "yes":
@@ -254,7 +261,8 @@ def fourth_choice():
             time.sleep(2)
             print("Causing a slow and painful death...\n")
             time.sleep(2)
-            print("\nGAME OVER")
+            print(Fore.RED + "GAME OVER !\n")
+            print(Style.RESET_ALL)
             play_again()
         else:
             print("Without any weapons to fight the wolf\n")
@@ -265,7 +273,8 @@ def fourth_choice():
             time.sleep(2)
             print("Causing a slow and painful death...\n")
             time.sleep(2)
-            print("\nGAME OVER")
+            print(Fore.RED + "GAME OVER !\n")
+            print(Style.RESET_ALL)
             play_again()
             break
 
@@ -318,7 +327,8 @@ def fruit():
     elif edible_fruit == "no":
         print("Bad idea !!")
         print("You end up starving and dying...")
-        print("GAME OVER !!!")
+        print(Fore.RED + "GAME OVER !\n")
+        print(Style.RESET_ALL)
         play_again()
     else:
         print("Wrong input. Please type 'yes', 'no'")
@@ -338,7 +348,8 @@ def bear():
     time.sleep(2)
     print("And kills you...\n")
     time.sleep(2)
-    print("GAME OVER!!")
+    print(Fore.RED + "GAME OVER !\n")
+    print(Style.RESET_ALL)
     play_again()
 
 
@@ -365,7 +376,8 @@ def satellite_phone():
         time.sleep(2)
         print("You escape the island!\n")
         time.sleep(2)
-        print("CONGRATULATIONS!!!\n")
+        print(Fore.GREEN + "CONGRATULATIONS!!!\n")
+        print(Style.RESET_ALL)
         win_string = "YOU WOM!!!\n"
         for character in win_string:
             sys.stdout.write(character)
