@@ -326,6 +326,18 @@ def bear():
     """
     The bear function. Completing the right directiion of the road.
     """
+    print("You keep walking on the path you chose\n")
+    time.sleep(2)
+    print("You hear something moving behind you.\n")
+    time.sleep(2)
+    print("OH NO. It's A BEAR!!\n")
+    time.sleep(2)
+    print("The bear catches up to you\n")
+    time.sleep(2)
+    print("And kills you...\n")
+    time.sleep(2)
+    print("GAME OVER!!")
+    play_again()
 
 
 
