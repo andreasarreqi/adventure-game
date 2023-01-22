@@ -1,10 +1,9 @@
-# Importing time module,sys and colorama
 import time
 import sys
 import colorama
 from colorama import Fore, Back, Style
 
-# Global Variables
+
 global axe
 axe = "no"
 global Flare
