@@ -4,7 +4,7 @@ import sys
 import colorama
 from colorama import Fore, Back, Style
 
-
+# Global Variables
 global axe
 axe = "no"
 global Flare
@@ -19,7 +19,7 @@ def game_introduction():
     """
     print()
     print("Quite an exciting day for you passes by.\n")
-    print("You find yourself at the airport few minutes away from departing to your holiday destination.\n")
+    print("You're at the airport waiting to go to your holiday destination.\n")
     time.sleep(2)
     print("Everything seems to be going well.\n")
     print("The flight seems to be quiet and very comfy.\n")
@@ -35,24 +35,23 @@ def game_introduction():
     print("And using the radio for help he fails.")
     print("Eventually the plane crashes in a deserted island\n")
     time.sleep(2)
-    print("     _.-^^---....,,--       ")
-    print(" _--                  --_  ")
-    print("<                        >)")
-    print("|                         |")
-    print(" \._                   _./ ")
-    print("    ```--. . , ; .--''' ")
-    print("          | |   |         ")
-    print("       .-=||  | |=-.   ")
-    print("       `-=#$%&%$#=-'   ")
-    print("          | ;  :|     ")
-    print(" _____.,-#%&$@%#&#~,._____")
+    print("        _.-^^---....,,--       ")
+    print("    _--                  --_  ")
+    print("   <                        >)")
+    print("   |                         |")
+    print(" ...._                   _./ ")
+    print("      ```--. . , ; .--''' ")
+    print("             | |   |         ")
+    print("          .-=||  | |=-.   ")
+    print("          `-=#$%&%$#=-'   ")
+    print("             | ;  :|     ")
+    print("    _____.,-#%&$@%#&#~,._____")
     print(".")
     print(".")
     print(".")
     print("The plane has crashed!!!")
 
 
-# The game start function
 def game_start():
     """
     Setting up the game start function
@@ -61,8 +60,7 @@ def game_start():
     print("Confused and lost, you try to look around the cabin")
     print("You realise that you are the only one alive...")
     while True:
-        find_the_way = input("Would you like to try to find a way " +
-        "to leave the island? (yes/no):\n")
+        find_the_way = input("Do you want to leave the island? (yes/no):\n")
         if find_the_way == "no":
             print("\nWell, it was nice knowing you...")
             time.sleep(2)
@@ -80,10 +78,9 @@ def game_start():
             continue
 
 
-# The username function
 def username():
     """
-    Continues with the story.Deals with the left/right/inland inputs a.k.a choices.
+    Deals with the left/right/inland inputs a.k.a choices.
     """
     print("\nGreat! You made a life-changing decision!")
     time.sleep(2)
@@ -119,7 +116,6 @@ def username():
             continue
 
 
-# Second choice function / go right find an axe
 def second_choice():
     """
     Give the user the choice to pick up the axe or keep on moving
@@ -149,7 +145,8 @@ def second_choice():
             third_choice = input("Do you stay or go inland? (stay/go):\n")
             if third_choice == "yes":
                 print("You lay down to get some rest.")
-                print("You eventually fall asleep and a poisonous snake bites you.\n")
+                print("You eventually fall asleep")
+                print("And a poisonous snake bites you.\n")
                 time.sleep(1.5)
                 print(Fore.RED + "GAME OVER !\n")
                 print(Style.RESET_ALL)
@@ -185,7 +182,6 @@ def second_choice():
             continue
 
 
-# The fourth choice function / inland
 def fourth_choice():
     """
     If the user either choses the right path or the inland path.
@@ -284,10 +280,10 @@ def fourth_choice():
             break
 
 
-# The fifth choice / Go left
 def fifth_choice():
     """
-    the fifth choice function
+    the fifth choice function. Go Left
+    Also gives two more directions to choose from
     """
     print("Devestated yet focused.\n")
     time.sleep(1)
@@ -322,10 +318,10 @@ def fifth_choice():
 
 def fruit():
     """
-    The fruit function giving the user the choice to eat the fruit or keep moving
+    Fruit function giving the user the choice to eat the fruit or keep moving
     """
     while True:
-        edible_fruit = input("Do you eat the fruit ? (yes/no)\n:")
+        edible_fruit = input("Do you eat the fruit ? (yes/no):\n")
         if edible_fruit == "yes":
             print("Good. You are set ffor few more hours")
             time.sleep(2)
@@ -366,11 +362,9 @@ def bear():
         play_again()
         break
 
-    
-
 
 def satellite_phone():
-    """ 
+    """
     The satelite phone function which allows the user to escape the island.
     """
     while True:
@@ -405,7 +399,7 @@ def satellite_phone():
 
 def play_again():
     """
-    The play again function giving the user the choice to play again or exit the game
+    Play again function giving user the choice to play again or exit the game
     """
     while True:
         play_again = input("Would you like to try again? (yes/no):\n")
@@ -425,8 +419,6 @@ def play_again():
         else:
             print("Wrong input. Please type 'yes' or 'no'.")
             continue
-
-
 
 
 game_introduction()
