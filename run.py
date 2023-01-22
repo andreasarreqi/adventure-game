@@ -50,7 +50,6 @@ def game_introduction():
     print(".")
     print(".")
     print("The plane has crashed!!!")
-    
 
 
 # The game start function
