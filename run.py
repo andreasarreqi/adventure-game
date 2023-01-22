@@ -1,5 +1,6 @@
 # Importing time modules
 import time
+import sys
 
 
 global axe
@@ -347,7 +348,7 @@ def satellite_phone():
     """
     while True:
         print("Now that you have replenished your energy.\n")
-        time.sleep(0.2)
+        time.sleep(2)
         print("You keep walking desperately.\n")
         time.sleep(2)
         print("But your luck hasn't run out yet..\n")
@@ -370,6 +371,7 @@ def satellite_phone():
             sys.stdout.write(character)
             sys.stdout.flush()
             time.sleep(0.2)
+        play_again()
 
 
 
