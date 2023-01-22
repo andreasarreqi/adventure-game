@@ -340,6 +340,11 @@ def bear():
     play_again()
 
 
+def satellite_phone():
+    """ 
+    The satelite phone function which allows the user to escape the island.
+    """
+
 
 
 
