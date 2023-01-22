@@ -194,7 +194,7 @@ def fourth_choice():
     print("You stumble upon a flare.\n")
     while True:
         global flare
-        flare = input("Do you take the flare?: (yes/no)")
+        flare = input("Do you take the flare? (yes/no):")
         time.sleep(1)
         if flare == "yes":
             print("Good choice. That might be helpful.\n")
@@ -285,7 +285,7 @@ def fifth_choice():
         time.sleep(2)
         print("And you come across 2 roads\n")
         time.sleep(2)
-        roads = input("Which direction do you choose ?: (left/right)\n")
+        roads = input("Which direction do you choose ? (left/right):\n")
         time.sleep(2)
         if roads == "left":
             global edible_fruit
@@ -294,6 +294,7 @@ def fifth_choice():
             print("And you find some fruit")
             time.sleep(2)
             fruit()
+            satellite_phone()
             break
         elif roads == "right":
             print("Good the area seems to be clear of danger")
@@ -309,7 +310,7 @@ def fruit():
     """
     The fruit function giving the user the choice to eat the fruit or keep moving
     """
-    edible_fruit = input("Do you eat the fruit ?: (yes/no)")
+    edible_fruit = input("Do you eat the fruit ? (yes/no):")
     if edible_fruit == "yes":
         print("Good. You are set ffor few more hours")
         print("Now you're only focusing on finding a way out...")
@@ -344,6 +345,31 @@ def satellite_phone():
     """ 
     The satelite phone function which allows the user to escape the island.
     """
+    while True:
+        print("Now that you have replenished your energy.\n")
+        time.sleep(0.2)
+        print("You keep walking desperately.\n")
+        time.sleep(2)
+        print("But your luck hasn't run out yet..\n")
+        time.sleep(2)
+        print("Yuo find a suitcase.\n")
+        time.sleep(2)
+        print("And you decide to open it\n")
+        time.sleep(2)
+        print("Inside it there is a satellite phone\n")
+        time.sleep(2)
+        print("You call for SOS\n")
+        time.sleep(2)
+        print("And after few hours help arrives\n")
+        time.sleep(2)
+        print("You escape the island!\n")
+        time.sleep(2)
+        print("CONGRATULATIONS!!!\n")
+        win_string = "YOU WOM!!!\n"
+        for character in win_string:
+            sys.stdout.write(character)
+            sys.stdout.flush()
+            time.sleep(0.2)
 
 
 
