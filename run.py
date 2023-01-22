@@ -378,6 +378,23 @@ def play_again():
     """
     The play again function giving the user the choice to play again or exit the game
     """
+    while True:
+        play_again = input("Would you like to try again? (yes/no):\n")
+        if play_again == "yes":
+            global axe
+            axe = "no"
+            global flare
+            flare = "no"
+            game_introduction()
+            game_start()
+            break
+        elif play_again == "no":
+            print("\nThat's a shame... Thanks for playing!\n")
+            break
+        else:
+            print("Wrong input. Please type 'yes' or 'no'.")
+            continue
+
 
 
 
