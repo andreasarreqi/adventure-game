@@ -40,14 +40,15 @@ Asks the user if they want to play again or not.
 ![Alt text](Docs/play%20again.PNG)
 
 ## Technologies
-- Python
-- GitHub
-- Git
-- Gitpod
-- Heroku
-- Python module sys
-- Python module time
 
+- Python was used as the programming language to make the game.
+- LucidChart was used to create the flow chart showing the game's logic.
+- GitHub has been used to store the code, images, and other content.
+- Heroku was used to deploy the game to the web.
+- Git was used to track changes made to the project and to commit and push code to the repository.
+- Python module time has been used to allow for a delay between lines of text displaying.
+- Python module sys has been used to print text by character instead of all at oncee.
+- Colorama was used to make the Game over text red and the Congratulations text green
 
 ## Testing 
 
