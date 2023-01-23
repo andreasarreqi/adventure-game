@@ -1,5 +1,6 @@
 # LOST. A text-based adventure game
 
+
 ## How To Play
 
 The game is called LOST.
@@ -8,6 +9,7 @@ Its a text based adventure game and it is quite easy to play as it requires mini
 The player's goal is to survive and get off the deserted island. The players has the choice to choose what direction they go. And their survival depends only on the choices they make.
 
 As soon as the game loads the player is provided with a story on how the player ends up on a deserted island. 
+
 
 ## Features 
 - __Name__ 
@@ -39,6 +41,7 @@ Asks the user if they want to play again or not.
 
 ![Alt text](Docs/play%20again.PNG)
 
+
 ## Technologies
 
 - Python was used as the programming language to make the game.
@@ -50,13 +53,45 @@ Asks the user if they want to play again or not.
 - Python module sys has been used to print text by character instead of all at oncee.
 - Colorama was used to make the Game over text red and the Congratulations text green
 
+
 ## Testing 
 
+- Leave the island incorrect input
+Only accepts yes or no as input input to procceed with the game.
+
+![Alt text](Docs/leave-island-Incorrect-input.PNG)
 
 
+- Left/Right/Inland Incorrect input 
+Only acceps left ,Right or Inland input to procceed with the game.
+
+![Alt text](Docs/path%20incorrect%20input.PNG)
+
+
+- Stay or go incorrect input.
+Only accepts stay or go as input input to procceed with the game.
+
+![Alt text](Docs/stay%20or%20go%20incorrect%20input.PNG)
+
+
+
+
+- Axe incorrect input
+Only accepts yes or no as input input to procceed with the game.
+
+![Alt text](Docs/axe%20incorrect%20input.PNG)
+
+
+
+- Try again incorrect input.
+Only accepts yes or no as input input to procceed with the game.
+
+
+![Alt text](Docs/play%20again%20incorrect%20input.PNG)
 ### Validator Testing 
+No errors were found and the code is formatted up to standard.
 
-
+![Alt text](Docs/code%20standard.PNG)
 
 ### Bugs/Other
 
