@@ -51,7 +51,7 @@ Asks the user if they want to play again or not.
 - Git was used to track changes made to the project and to commit and push code to the repository.
 - Python module time has been used to allow for a delay between lines of text displaying.
 - Python module sys has been used to print text by character instead of all at oncee.
-- Colorama was used to make the Game over text red and the Congratulations text green
+- Colorama was installed using (pip install and pip freeze) to make the Game over text red and the Congratulations text green
 
 ## Flow Chart
 
