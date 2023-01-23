@@ -95,8 +95,8 @@ No errors were found and the code is formatted up to standard.
 
 ### Bugs/Other
 
-
-
+As far as testing goes. I have manually tested all the possible outcomes. The incorrect inputs given send a message asking the user to put the correct input to the terminal. Few incorrect input messages are not as quick as others so they might take few miliseconds or seconds to appear and alert the user.
+I personally tested every function and every in-game scenario. So far everything works just fine.
 ## Deployment
 
 
