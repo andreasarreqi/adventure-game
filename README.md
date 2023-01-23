@@ -1,6 +1,6 @@
 # LOST. A text-based adventure game
 
-
+- The deployed app can be found ![here](https://adventure-game.herokuapp.com/)
 ## How To Play
 
 The game is called LOST.
@@ -53,6 +53,10 @@ Asks the user if they want to play again or not.
 - Python module sys has been used to print text by character instead of all at oncee.
 - Colorama was used to make the Game over text red and the Congratulations text green
 
+## Flow Chart
+
+![Alt text](Docs/pp3-lucidchart1.PNG)
+
 
 ## Testing 
 
@@ -74,13 +78,15 @@ Only accepts stay or go as input input to procceed with the game.
 ![Alt text](Docs/stay%20or%20go%20incorrect%20input.PNG)
 
 
-
-
 - Axe incorrect input
 Only accepts yes or no as input input to procceed with the game.
 
 ![Alt text](Docs/axe%20incorrect%20input.PNG)
 
+
+- Fruit incorrect input
+
+![Alt text](Docs/fruit%20incorrect%20input.PNG)
 
 
 - Try again incorrect input.
@@ -97,11 +103,26 @@ No errors were found and the code is formatted up to standard.
 
 As far as testing goes. I have manually tested all the possible outcomes. The incorrect inputs given send a message asking the user to put the correct input to the terminal. Few incorrect input messages are not as quick as others so they might take few miliseconds or seconds to appear and alert the user.
 I personally tested every function and every in-game scenario. So far everything works just fine.
+
+
+
+
 ## Deployment
 
+__The below steps were followed to deploy this project to Heroku:__
 
+- Go to Heroku and click "New" to create a new app.
+- After choosing the app name and setting the region, press "Create app".
+- Go to "Settings" and navigate to Config Vars. Add a Config Var with a key word of called PORT and a value of 8000.
+- Still in the "Settings", navigate to Buildpacks and add buildpacks for Python and NodeJS (in order).
+- Leave "Settings" and go to "Deploy". Scroll down and set Deployment Method to GitHub. Once GitHub is chosen, find yourr repository and connect it to Heroku.
+-Scroll down to Manual Deploy, make sure the "main" branch is selected and click "Deploy Branch".
+- The deployed app can be found ![here](https://adventure-game.herokuapp.com/)
 
 
 ## Credits 
+- The explosion thing was taken from ASCII arts.
 
+## Acknowledgements
+Special thanks to my mentor Daisy and my tutor Oisin.
  
