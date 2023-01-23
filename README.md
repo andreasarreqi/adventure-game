@@ -33,14 +33,20 @@ The CONGRATULATIONS text comes in green color followed by a YOU WON text.
 
 ![Alt text](Docs/escape%20green%20Congrats.PNG)
 
--__Play Again__
+- __Play Again__
 
 Asks the user if they want to play again or not.
 
 ![Alt text](Docs/play%20again.PNG)
 
 ## Technologies
-
+- Python
+- GitHub
+- Git
+- Gitpod
+- Heroku
+- Python module sys
+- Python module time
 
 
 ## Testing 
