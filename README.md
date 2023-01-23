@@ -55,6 +55,9 @@ Asks the user if they want to play again or not.
 
 ## Flow Chart
 
+A basic map of the functions in a human readable text. Explaining the functions and the outcomes of every choice you mak.
+
+
 ![Alt text](Docs/pp3-lucidchart1.PNG)
 
 
