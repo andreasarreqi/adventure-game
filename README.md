@@ -1,6 +1,6 @@
 # LOST. A text-based adventure game
 
-- The deployed app can be found ![here](https://adventure-game.herokuapp.com/)
+- The deployed app can be found [here](https://adventure-game.herokuapp.com/)
 ## How To Play
 
 The game is called LOST.
@@ -117,7 +117,7 @@ __The below steps were followed to deploy this project to Heroku:__
 - Still in the "Settings", navigate to Buildpacks and add buildpacks for Python and NodeJS (in order).
 - Leave "Settings" and go to "Deploy". Scroll down and set Deployment Method to GitHub. Once GitHub is chosen, find yourr repository and connect it to Heroku.
 -Scroll down to Manual Deploy, make sure the "main" branch is selected and click "Deploy Branch".
-- The deployed app can be found ![here](https://adventure-game.herokuapp.com/)
+- The deployed app can be found [here](https://adventure-game.herokuapp.com/)
 
 
 ## Credits 
